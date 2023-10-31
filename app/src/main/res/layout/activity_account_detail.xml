@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account.activity.AccountDetail">
+    <LinearLayout
+        android:id="@+id/Lin_Account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Purpule_500"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Account "
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blur4"
+        android:padding="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Lin_Account"
+     >
+
+        <ImageView
+            android:id="@+id/Image_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/nopictures"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Name_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:text="Name of Shop"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/Image_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Edit_businessDetai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+
+            android:text="Edit businss details"
+            android:textColor="@color/teal_200"
+            app:layout_constraintStart_toEndOf="@+id/Image_logo"
+            app:layout_constraintTop_toBottomOf="@+id/Name_shop" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_NameApp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gray4"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Name Of Store"
+                    android:layout_gravity="center"
+                  />
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="220dp"
+                    />
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/linear_NameApp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrient_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_outline_credit_score_24"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dukan Credits"
+                android:textSize="16sp"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>t>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrient_Subscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/subscription"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subcription Plan"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_marginStart="40dp"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Constrinet_Tutorials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/video"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tutorials"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Constrient_Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/info"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Information"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

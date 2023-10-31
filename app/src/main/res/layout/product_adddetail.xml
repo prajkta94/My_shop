@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginStart="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/Product_imagerecycle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+
+            android:src="@drawable/nopictures"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.125" />
+        <ImageButton
+            android:id="@+id/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_more_vert_24"
+            android:onClick="showPopup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Product_Nameinrecycle"
+            android:layout_width="186dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="ProductName"
+
+            app:layout_constraintStart_toEndOf="@+id/Product_imagerecycle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/Product_Picesrecycle"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="No of Pices"
+
+            app:layout_constraintStart_toEndOf="@+id/Product_imagerecycle"
+            app:layout_constraintTop_toBottomOf="@+id/Product_Nameinrecycle" />
+
+        <LinearLayout
+            android:id="@+id/linear_pricelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            app:layout_constraintStart_toEndOf="@+id/Product_imagerecycle"
+            app:layout_constraintTop_toBottomOf="@+id/Product_Picesrecycle">
+
+
+            <TextView
+                android:id="@+id/Product_Discountdrecycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="DiscountedPrice"
+
+                />
+
+            <TextView
+                android:id="@+id/Product_pricerecycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="ActualPrice"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="13dp"
+
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Product_imagerecycle"
+            app:layout_constraintTop_toBottomOf="@+id/linear_pricelayout">
+
+            <TextView
+                android:id="@+id/Product_Status"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="In stock"
+                android:textColor="@color/sky_blue1"
+                android:textSize="15sp" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="10dp"
+            android:background="#1B1919"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout_shareProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_shareProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Product_imagerecycle"
+            tools:layout_editor_absoluteY="131dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_outline_share_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ShareProduct"
+                android:textColor="@color/Purpule_500"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>

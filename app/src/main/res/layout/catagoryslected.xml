@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/box_edittext"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:text="Add New Category"-->
+<!--            android:textColor="@color/sky_blue1" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Choose Category"
+            android:textColor="@color/black" />
+
+        <ListView
+            android:id="@+id/listCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></ListView>
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/filled_edit_text"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:hint="Product Name"-->
+<!--            app:counterTextColor="@color/sky_blue1"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/product_name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginEnd="20dp"-->
+<!--                android:textColor="@color/sky_blue1" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/AddCAtegory_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text=" + ADD NEW CATEGORY"
+            android:textColor="@color/orange_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selectCtegory"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@color/sky_blue1"
+            android:padding="10dp"
+            android:text="Select"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/linearc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutC"
+        android:weightSum="3"
+        android:background="@drawable/box_edittext"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add new Category"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/box_edittext"
+            android:hint="Enter new catagory"
+            android:layout_weight="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/AddCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/sky_blue1"
+            android:textColor="@color/white"
+            android:text="Add Cetagory"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

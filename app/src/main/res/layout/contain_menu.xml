@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:scrollbars="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/Purpule_500"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:id="@+id/All_fragment"
+                            android:layout_width="50dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_detail"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="All"
+                           />
+
+                        <TextView
+                            android:id="@+id/Pending_frgment"
+                           android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_detail"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Pending" />
+
+                        <TextView
+                            android:id="@+id/Accepted_fragment"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_detail"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Accepted" />
+
+                        <TextView
+                            android:id="@+id/Shipped_fragment"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_detail"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Shipped" />
+
+                        <TextView
+                            android:id="@+id/Delivered_fragment"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_detail"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Delivered" />
+
+                        <TextView
+                            android:id="@+id/Modify_fragment"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_detail"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Modify" />
+
+                        <TextView
+                            android:id="@+id/Rejected_fragment"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/border_detail"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:gravity="center"
+                            android:text="Rejected" />
+
+                        <TextView
+                            android:id="@+id/Cancelled_fragment"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/back_select"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Cancelled" />
+
+                        <TextView
+                            android:id="@+id/Failed_fragment"
+                            android:paddingStart="12dp"
+                            android:paddingEnd="12dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/Purpule_500"
+                            android:background="@drawable/back_select"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:text="Failed" />
+
+                </LinearLayout>
+        </HorizontalScrollView>
+</LinearLayout>

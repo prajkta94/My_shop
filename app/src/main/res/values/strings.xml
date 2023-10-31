@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Rs">\u20B9</string>
+    <string name="Warning">Warning:All your products,catagories,\n orders wiil be permanently deleted.</string>
+    <string name="checkString">I accept and want to continue.</string>
+
+    <string name="PaymentString">Pay in cash or pay in person at the time of\n delivery with Gpay/PayTm/PhonePe</string>
+    <string name="RequiedField">it will make this filed as a mandatory field and\n customer won\'t be able to skip it </string>
+    <string name="ProductViewA">Product views shows many\npeople have checked out your\n individual products/services</string>
+
+    <string name="ProductViewQ"> What are the Product view?</string>
+    <string name="StoeViewA">Store views numbers shows how\nmany pepole have visited your store\n on the internet/services</string>
+
+    <string name="StoreViewQ"> What are the Store view?</string>
+    <string name="orderinfo">You will receive a confirmation message \nshortly.For more details,check orders \nstatus on your WhatsApp </string>
+</resources>

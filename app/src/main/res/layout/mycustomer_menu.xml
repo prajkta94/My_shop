@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="50dp"
+            android:background="@color/Purpule_500"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/All_customer"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_select"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:text="All"
+                android:textColor="@color/Purpule_500" />
+
+            <TextView
+                android:id="@+id/New_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_select"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:text="New"
+                android:textColor="@color/Purpule_500" />
+
+            <TextView
+                android:id="@+id/Returing_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_select"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:text="Returing"
+                android:textColor="@color/Purpule_500" />
+
+            <TextView
+                android:id="@+id/Imported_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_select"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:text="Imported"
+                android:textColor="@color/Purpule_500" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

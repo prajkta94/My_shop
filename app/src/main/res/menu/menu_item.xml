@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/Home"
+    android:icon="@drawable/ic_baseline_home_24"
+    android:title="Home"/>
+
+    <item
+        android:id="@+id/Orders"
+        android:icon="@drawable/ic_baseline_reorder_24"
+        android:title="Orders"
+        />
+
+    <item
+        android:id="@+id/Product"
+        android:icon="@drawable/ic_baseline_production_quantity_limits_24"
+        android:title="Product"/>
+    <item
+        android:id="@+id/Manage"
+        android:icon="@drawable/ic_outline_density_small_24"
+        android:title="Manage"/>
+    <item
+        android:id="@+id/Account"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Account"/>
+
+
+</menu>
